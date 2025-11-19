@@ -1,17 +1,17 @@
 class Computer {
-    constructor(
-        // Parameters
-        name,
-        processor,
-        ram,
-        storage,
-        os,
-        wifi,
-        monitor,
-        wifiBand2g,
-        wifiBand5g,
-        image
-    ) {
+  constructor(
+    // Parameters
+    name,
+    processor,
+    ram,
+    storage,
+    os,
+    wifi,
+    monitor,
+    wifiBand2g,
+    wifiBand5g,
+    image
+  ) {
     // Properties
     this.name = name;
     this.processor = processor;
@@ -21,18 +21,19 @@ class Computer {
     this.wifi = wifi;
     this.monitor = monitor;
     this.wifispeed = {
-        lowSpeed  : wifiBand2g,
-        highSpeed : wifiBand5g,
+      lowSpeed: wifiBand2g,
+      highSpeed: wifiBand5g,
     };
 
     this.image = image;
-    }
-    toggleWifi(wifiStatus) {
-        this.wifi = wifiStatus;
-    }
-    newWifiSpeed(upgrade2g, upgrade5g) {
-  this.wifispeed.lowSpeed = upgrade2g;
-  this.wifispeed.highSpeed = upgrade5g;
-    }
+  }
+  toggleWifi(wifiStatus) {
+    this.wifi = wifiStatus;
+  }
+  newWifiSpeed(upgrade2g, upgrade5g) {
+    this.wifispeed.lowSpeed = upgrade2g;
+    this.wifispeed.highSpeed = upgrade5g;
+  }
+}
 
 export default Computer;
